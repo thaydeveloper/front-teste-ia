@@ -2,6 +2,7 @@
 // Adicione aqui as interfaces e tipos que serão usados em services, hooks e componentes.
 
 export interface ApiResponse<T> {
+  // Generic API response
   data: T;
   status: number;
   message?: string;
@@ -20,7 +21,23 @@ export interface UpdateUserPayload {
   email?: string;
 }
 
+export interface Product {
+  id: string;
+  name: string;
+  description?: string;
+  price: number;
+  createdAt?: string;
+  updatedAt?: string;
+}
+
 // Endpoints da API de usuários
+
+// Endpoints da API de produtos
+export const ProductApi = {
+  base: '/api/products',
+  list: '/api/products',
+  detail: (id: string) => `/api/products/${id}`,
+};
 export const UserApi = {
   base: '/api/users',
   list: '/api/users',
