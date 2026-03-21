@@ -4,18 +4,28 @@
   "description": "A simple CRUD frontend for product management",
   "main": "index.js",
   "scripts": {
-    "start": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build src/presentation",
+    "start": "next start src/presentation"
   },
-  "keywords": ["crud", "products", "frontend"],
+  "keywords": [
+    "crud",
+    "products",
+    "frontend"
+  ],
   "author": "OpenClaw",
   "license": "MIT",
-  "devDependencies": {
-    "vite": "^5.0.0"
-  },
   "dependencies": {
     "bootstrap": "^5.3.0",
-    "bootstrap-icons": "^1.11.0"
+    "bootstrap-icons": "^1.11.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "next": "latest"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2",
   }
 }
